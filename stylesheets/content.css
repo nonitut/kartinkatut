@@ -1,0 +1,61 @@
+#button{
+  position: relative;
+  margin-left: 200px;
+}
+#main {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin-left: 200px;
+}
+
+#main .popup {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    width: 100px;
+    text-align: center;
+    opacity: 0;
+
+	-webkit-animation: popup 0.5s ease-in;
+	   -moz-animation: popup 0.5s ease-in;
+	    -ms-animation: popup 0.5s ease-in;
+	     -o-animation: popup 0.5s ease-in;
+	        animation: popup 0.5s ease-in;
+}
+
+@-webkit-keyframes popup {
+	0% 		{ -webkit-transform: translateY(0px) scale(0.5); opacity: 0.5; }
+	10% 	{ -webkit-transform: translateY(0px) scale(1); opacity: 1;   }
+	50% 	{ opacity: 1; }
+	100%	{ -webkit-transform: translateY(-60px); opacity: 0; }
+}
+
+@keyframes popup {
+	0% 		{ transform: translateY(0px) scale(0.5); opacity: 0.5; }
+	10% 	{ transform: translateY(0px) scale(1); opacity: 1;   }
+	50% 	{ opacity: 1; }
+	100%	{ transform: translateY(-60px); opacity: 0; }
+}
+
+
+#box {
+      width: 200px;
+      height: 200px;
+      left: calc(60% + 20px);
+      top: 100px;
+      background: grey;
+      position: absolute;
+      display: block;
+    }
+
+    #bum {
+      width: 200px;
+      height: 200px;
+      left: calc(50% - 100px);
+      top: 100px;
+      background-image: url('img/0.jpg');
+      background-size: 100% auto;
+      position: absolute;
+      display: block;
+    }
